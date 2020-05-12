@@ -9,8 +9,13 @@ public class Cat {
     // The biological family for all cat species
     private String family = "Felidae";
 
+    //constructor(one parameter)
     public Cat (double aWeight) {
         weight = aWeight;
+    }
+
+    public Cat(){
+        weight = 66;
     }
 
     /**** Getters and Setters ****/
@@ -61,6 +66,21 @@ public class Cat {
 
         hungry = false;
     }
+    private void eat1() {
+
+        // eating when not hungry makes a cat sleepy
+        if (!hungry) {
+            tired = true;
+        }
+
+        hungry = false;
+    }
+
+    public static void eat2() {
+        System.out.println("I love you!");
+    }
+
+
 
     public String noise () {
         return "Meeeeeeooooowww!";

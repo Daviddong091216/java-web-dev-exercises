@@ -7,7 +7,7 @@ public class ArrayGradebook {
     public static void main(String[] args) {
 
         // Allow for at most 30 students
-        int maxStudents = 30;
+        int maxStudents = 10;
 
         String[] students = new String[maxStudents];
         double[] grades = new double[maxStudents];
@@ -47,6 +47,7 @@ public class ArrayGradebook {
 
         double avg = sum / numStudents;
         System.out.println("Average grade: " + avg);
+        System.out.println("students length: " + students.length);
     }
 
 }
