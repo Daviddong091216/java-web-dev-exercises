@@ -3,9 +3,15 @@ package exercises.ch1;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Practice {
     public static void main(String[] args) {
+        Scanner keyboardInput = new Scanner(System.in);
+        System.out.println("Enter your love: ");
+        String love = keyboardInput.nextLine();
+        System.out.println("I love {love}");
+
         String str = "Miley";
         System.out.println(str.length());
         char[] str1 = str.toCharArray();
